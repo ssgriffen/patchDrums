@@ -21,7 +21,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#first"><i class="ion-music-note"> </i> Patch Drums</a>
+                <a class="navbar-brand page-scroll" href="#first"><i class="ion-music-note"> </i></a>
             </div>
             <div class="navbar-collapse collapse" id="bs-navbar">
                 <ul class="nav navbar-nav">
@@ -35,6 +35,7 @@
                     <li>
                         <a class="page-scroll" href="#last">Gigs</a>
                     </li>
+                    
                 </ul>
             </div>
         </div>
@@ -45,23 +46,38 @@
                 <h1 class="cursive">Patch Mahoney</h1>
                 <h4>21 year old professional drummer</h4>
                 <hr>
-                <!--<a href="#video-background" id="toggleVideo" data-toggle="collapse" class="btn btn-primary btn-xl">Toggle Video</a> &nbsp; <a href="#one" class="btn btn-primary btn-xl page-scroll">Get Started</a> -->
+              <button class="btn-warning" id="play" onclick="vidplay()">Pause</button>
+                 
             </div>
         </div>
-        <video autoplay="" loop="" class="fillWidth fadeIn wow collapse in" data-wow-delay="0.5s" poster="assets/img/drumPoster.jpg" id="video-background">
+        <video autoplay= "" loop="" class="fillWidth fadeIn wow collapse in" data-wow-delay="0.5s" poster="assets/img/drumPoster.jpg" id="video-background">
             <source src="assets/vid/patch2.webm" type='video/webm;codecs="vp8, vorbis"'>Your browser does not support the video tag. I suggest you upgrade your browser. 
         </video>
+        <script>
+
+function vidplay() {
+       var video = document.getElementById("video-background");
+       var button = document.getElementById("play");
+       if (video.paused) {
+          video.play();
+          button.textContent = "Pause";
+       } else {
+          video.pause();
+          button.textContent = "Play";
+       }
+    }
+</script>
     </header>
     <section class="bg-primary" id="one">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 text-center">
-                    <h2 class="margin-top-0 text-primary">Built On The Bootstrap Grid</h2>
+                    <h2 class="margin-top-0 text-primary">Hello, I'm Patch.</h2>
                     <br>
                     <p class="text-faded">
-                        Bootstrap's responsive grid comes in 4 sizes or "breakpoints": tiny (xs), small(sm), medium(md) and large(lg). These 4 grid sizes enable you create responsive layouts that behave accordingly on different devices.
+                        I will soon write a short bio and note on what I am looking to acheive in my drumming career. Be sure  to check out some of my work below. s
                     </p>
-                    <a href="#three" class="btn btn-default btn-xl page-scroll">Learn More</a>
+                    <a href="#three" class="btn btn-default btn-xl page-scroll">Grooves</a>
                 </div>
             </div>
         </div>
