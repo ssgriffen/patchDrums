@@ -1,2 +1,2 @@
 # patchDrums
-Official website for professsional drummer Patch Mahoney
+Official website for professional drummer Patch Mahoney
