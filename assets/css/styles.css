@@ -42,7 +42,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #9c27c1;
+    color: #b89084;
     outline: 0;
 }
 
@@ -88,7 +88,7 @@ p {
 }
 
 .text-primary {
-    color: #716f1b;
+    color: #b89084;
     /* Hello, I'm Patch */
 }
 
@@ -123,7 +123,7 @@ footer {
 
 .navbar-header > .navbar-brand {
     font-family: 'Questrial','Helvetica Neue',Arial,sans-serif;
-    color: #9c27b0; 
+    color: #b89084; 
     padding: 15px;
     -webkit-transition: padding .2s ease-in;
     -moz-transition: padding .2s ease-in;
@@ -132,7 +132,7 @@ footer {
 
 .navbar-header > .navbar-brand:hover,
 .navbar-header > .navbar-brand:focus {
-    color: #716f1b !important;
+    color: #efefef !important;
     
 }
 
@@ -158,7 +158,7 @@ footer {
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: #716f1b !important; /*non-navbrand active scroll color */
+    color: #b89084 !important; /*non-navbrand active scroll color */
     background-color: transparent;
 }
 
@@ -207,7 +207,7 @@ footer {
 
     .navbar-default.affix .navbar-header .navbar-brand {
         font-size: 15px;
-        color: #716f1b; /*orignal color for links and ish: 9c27b0*/
+        color: #b89084; /*orignal color for links and ish: 9c27b0*/
         padding: 20px;
         letter-spacing: 1px;
     }
@@ -367,8 +367,10 @@ textarea {
         margin: 20px auto 0;
     }
 }
-
-.feature p {
+.feature img{
+    margin-bottom: 20px;
+}
+.feature figcaption {
     margin-bottom: 0;
 }
 
@@ -547,4 +549,5 @@ img::-moz-selection {
 #play1:cursor{
     cursor: pointer; cursor: hand;
 }
+
 
