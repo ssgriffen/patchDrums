@@ -551,10 +551,10 @@ img::-moz-selection {
 }
 #equip .equip-specific, #equip1 .equip-specific{
     color: gray;
+    text-decoration: underline;
 }
 
 #equip .equip-specific:hover, #equip1 .equip-specific:hover{
-    text-decoration: underline;
     color: white;
 }
 
