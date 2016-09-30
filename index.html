@@ -22,7 +22,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" id = "play" class="vidToggle" onclick="vidplay()"><i class="ion-pause"> </i></a>
+                <!-- <a class="navbar-brand page-scroll" id = "play" class="vidToggle" onclick="vidplay()"><i class="ion-pause"> </i></a> -->
                 <a class="navbar-brand page-scroll" href="#first">Top</a>
             </div>
             <div class="navbar-collapse collapse" id="bs-navbar">
@@ -31,17 +31,14 @@
                         <a class="page-scroll" href="#one">Me</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#two">Gear</a>
+                        <a class="page-scroll" href="#two">Clips</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#three">Clips</a>
+                        <a class="page-scroll" href="#three">Contact</a>
                     </li>
 
                     <li>
-                        <a class="page-scroll" href="#last">Gigs</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#lastly">Social</a>
+                        <a class="page-scroll" href="#last">Gear</a>
                     </li>
                     
                 </ul>
@@ -66,15 +63,12 @@
 
 function vidplay() {
        var video = document.getElementById("video-background");
-       var button = document.getElementById("play");
        var button1 = document.getElementById("play1");
        if (video.paused) {
           video.play();
-          button.textContent = "| |";
           button1.textContent = "| |";
        } else {
           video.pause();
-          button.textContent = ">";
           button1.textContent = ">";
        }
     }
@@ -98,58 +92,8 @@ function vidplay() {
             </div>
         </div>
     </section>
-    <section id="two">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="margin-top-0 text-primary">My Setup</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row" id="equip">
-                <div class="col-lg-6 col-md-6 text-center">
-                    <figure class="feature">
-                        <img src="assets/img/vicFirth.png" class="wow center-block" fadeIn img-responsive" data-wow-delay=".3s" width=50%;></img>
-                        <h4>Sticks</h4>
-                        <figcaption class="text-muted">The one and only 5B</figcaption>
-                        
-                    </figure>
-                </div>
-                <div class="col-lg-6 col-md-6 text-center">
-                    <figure class="feature">
-                        <img src="assets/img/ludwig.png" class="wow center-block" fadeIn img-responsive" data-wow-delay=".3s" width=50%;></img>
-                        <h4>Drums | Hardware</h4>
-                        <figcaption class="text-muted"><i>Classic Maple Vintage Black Oyster Pearl, Atlas Pro Hardware</i> </br><i class="ion-checkmark-round"> </i>12x8 rack tom <i class="ion-checkmark-round"> </i> 16x16 floor tom <i class="ion-checkmark-round"> </i> 22x14 bass <i class="ion-checkmark-round"> </i> 14x5 hammered supraphonic snare <i class="ion-checkmark-round"> </i> dw9000 pedals
-                          
-                        </figcaption>
-                        
-                    </figure>
-                </div>
-            </div>
-            <div class="row" id="equip1">
-                <div class="col-lg-6 col-md-6 text-center">
-                    <figure class="feature">
-                        <img src="assets/img/remo.png" class="wow center-block" fadeIn img-responsive" data-wow-delay=".3s" width=50%;></img>
-                        <h4>Drum Heads</h4>
-                        <figcaption class="text-muted">Snare: Coated Pinstripe </br>Toms: Coated Ambassadors</figcaption>
-                        
-                    </figure>
-                </div>
-                <div class="col-lg-6 col-md-6 text-center">
-                    <figure class="feature">
-                        <img src="assets/img/zil.png" class="wow center-block" fadeIn img-responsive" data-wow-delay=".3s" width=50%;></img>
-                        <h4>Cymbals</h4>
-                        <figcaption class="text-muted">13" k custom hi hats <i class="ion-arrow-right-c"> </i>16" a custom crash <i class="ion-arrow-right-c"> </i> 21" a custom anniversary ride <i class="ion-arrow-right-c"> </i> 17" a custom crash</figcaption>
-                        
-                    </figure>
-                </div>
-            </div>
-        </div>
-    </section>
     
-    <section id="three" class="no-padding">
+    <section id="two" class="no-padding">
         <div class="container-fluid">
             <div class="row no-gutter">
                 <div class="col-lg-4 col-sm-6">
@@ -201,37 +145,98 @@ function vidplay() {
     </section>
     
     
-    <section id="last">
+    <section id="three">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="margin-top-0 wow fadeIn">Let's Jam</h2>
+                    <h2 class="margin-top-0 wow fadeIn">Sponsors/Artists</h2>
                     <hr class="primary">
                     <p>Let me know what you are looking for in a drummer, I may be a fit.</p>
                 </div>
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <form action="mailto:samsgriffen@gmail.com" method="post" enctype="text/plain" class="contact-form row">
+                    <form method="post" action="assets/php/patchEmail.php" class="contact-form row">
                         <div class="col-md-4">
                             <label></label>
-                            <input type="text" class="form-control" placeholder="Name">
+                            <input id="name" name="name" type="text" class="form-control" placeholder="Name">
                         </div>
                         <div class="col-md-4">
                             <label></label>
-                            <input type="text" name="email" class="form-control" placeholder="Email">
+                            <input id="email" name="email" type="text" class="form-control" placeholder="Email">
                         </div>
                         <div class="col-md-4">
                             <label></label>
-                            <input type="text" class="form-control" placeholder="Phone">
+                            <input id="phone" name="phone" type="text" class="form-control" placeholder="Phone">
                         </div>
                         <div class="col-md-12">
                             <label></label>
-                            <textarea class="form-control" rows="9" placeholder="Your message here.."></textarea>
+                            <textarea id="message" name="message" class="form-control" rows="9" placeholder="Your message here.."></textarea>
                         </div>
                         <div class="col-md-4 col-md-offset-4">
                             <label></label>
-                            <button data-toggle="modal" data-target="#alertModal" class="btn btn-primary btn-block btn-lg">Send <i class="ion-android-arrow-forward"></i></button>
+                            <input type="submit" value="Send" data-toggle="modal" data-target="#alertModal" class="btn btn-primary btn-block btn-lg">
                         </div>
                     </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="last">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="margin-top-0 text-primary">My Setup</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row" id="equip">
+                <div class="col-lg-4 col-md-4 text-center">
+                    <figure class="feature">
+                        <img src="assets/img/vicFirth.png" class="wow center-block" fadeIn img-responsive" data-wow-delay=".3s" width=50%;></img>
+                        <h4>Sticks</h4>
+                        <figcaption class="text-muted">The one and only 5B</figcaption>
+                        
+                    </figure>
+                </div>
+            <div class="col-lg-4 col-md-4 text-center">
+                    <figure class="feature">
+                        <img src="assets/img/dw.png" class="wow center-block" fadeIn img-responsive" data-wow-delay=".3s" width=30%;></img>
+                        <h4>Pedals</h4>
+                        <figcaption class="text-muted">dw9000</figcaption>
+                        
+                    </figure>
+                </div>
+        <div class="col-lg-4 col-md-4 text-center">
+                    <figure class="feature">
+                        <img src="assets/img/remo.png" class="wow center-block" fadeIn img-responsive" data-wow-delay=".3s" width=50%;></img>
+                        <h4>Drum Heads</h4>
+                        <figcaption class="text-muted">Snare: Coated Pinstripe </br>Toms: Coated Ambassadors</figcaption>
+                        
+                    </figure>
+                </div>
+                
+            </div>
+            <div class="row" id="equip1">
+                
+                <div class="col-lg-6 col-md-6 text-center">
+                    <figure class="feature">
+                        <img src="assets/img/ludwig.png" class="wow center-block" fadeIn img-responsive" data-wow-delay=".3s" width=50%;></img>
+                        <h4>Drums | Hardware</h4>
+                        <figcaption class="text-muted"><i>Classic Maple Vintage Black Oyster Pearl, Atlas Pro Hardware</i> </br><i class="ion-checkmark-round"> </i>12x8 rack tom <i class="ion-checkmark-round"> </i> 16x16 floor tom <i class="ion-checkmark-round"> </i> 22x14 bass <i class="ion-checkmark-round"> </i> 14x5 hammered supraphonic snare
+                          
+                        </figcaption>
+                        
+                    </figure>
+                </div>
+                
+                <div class="col-lg-6 col-md-6 text-center">
+                    <figure class="feature">
+                        <img src="assets/img/zil.png" class="wow center-block" fadeIn img-responsive" data-wow-delay=".3s" width=50%;></img>
+                        <h4>Cymbals</h4>
+                        <figcaption class="text-muted">13" k custom hi hats <i class="ion-arrow-right-c"> </i>16" a custom crash <i class="ion-arrow-right-c"> </i> 18" k custom dark crash <i class="ion-arrow-right-c"> </i> 21" a custom anniversary ride <i class="ion-arrow-right-c"> </i> 17" a custom crash</figcaption>
+                        
+                    </figure>
                 </div>
             </div>
         </div>
