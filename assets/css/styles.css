@@ -153,7 +153,7 @@ footer {
 
 .navbar-default .nav > li>a:hover,
 .navbar-default .nav>li>a:focus:hover {
-    color: #9c27b0;
+    color: #b89084;
 }
 
 .navbar-default .nav > li.active>a,
@@ -214,7 +214,7 @@ footer {
 
     .navbar-default.affix .navbar-header .navbar-brand:hover,
     .navbar-default.affix .navbar-header .navbar-brand:focus {
-        color: #8b27b0;
+        color: #b89084;
     }
 
     .navbar-default.affix .nav > li>a,
@@ -549,5 +549,16 @@ img::-moz-selection {
 #play1:cursor{
     cursor: pointer; cursor: hand;
 }
+#equip .equip-specific, #equip1 .equip-specific{
+    color: gray;
+}
+
+#equip .equip-specific:hover, #equip1 .equip-specific:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+
+
 
 
