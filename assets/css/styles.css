@@ -555,6 +555,18 @@ img::-moz-selection {
 #equip .equip-specific:hover, #equip1 .equip-specific:hover{
     color: white;
 }
+@media (max-width: 767px) {
+  .header-content {
+    background: url('../img/crowd.jpeg') center center / cover no-repeat;
+  }
+
+  #video-background {
+    display: none;
+  }
+  #play1{
+    display: none;
+  }
+}
 
 
 
