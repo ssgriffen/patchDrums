@@ -557,7 +557,7 @@ img::-moz-selection {
 }
 @media (max-width: 767px) {
   .header-content {
-    background: url('../img/crowd.jpeg') center center / cover no-repeat;
+    background: url('../img/crowd3.jpg') center center / cover no-repeat;
   }
 
   #video-background {
