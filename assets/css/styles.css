@@ -138,7 +138,7 @@ footer {
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: #efefef !important; /*non-navbrand active scroll color */
+    color: #dcb579 !important; /*non-navbrand active scroll color */
     background-color: transparent;
 }
 
@@ -176,7 +176,7 @@ footer {
 
     .navbar-default .nav > li>a:hover,
     .navbar-default .nav>li>a:focus:hover {
-        color: #fefefe; /*Selecting a nav item*/
+        color: #dcb579; /*Selecting a nav item*/
         
     }
 
@@ -205,7 +205,7 @@ footer {
 
     .navbar-default.affix .nav > li>a:hover,
     .navbar-default.affix .nav>li>a:focus:hover {
-        color: #efefef; /*color selector for one scrolled down the page and hovering over a link item. */
+        color: white; /*color selector for one scrolled down the page and hovering over a link item. */
     }
 }
 
@@ -574,6 +574,7 @@ img::-moz-selection {
     color: #292929;
     padding: 5px 10px 20px 10px;
 }
+
 
 
 
