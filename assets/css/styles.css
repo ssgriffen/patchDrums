@@ -545,33 +545,24 @@ img::-moz-selection {
     border: none;
 }
 
-.team-item {
-	text-align: center;
-	background-color: #282828;
-}
 
-.team-item h3 {
+.bio-text-side h3 {
 	font-size: 16px;
 	font-weight: 800;
 	text-transform: uppercase;
 	color: rgba(255,255,255,0.8); /*or gray?*/
+    text-align: center;
 }
 
-.team-item .team-position {
-	/*color: #989898;*/
-	/*font-size: 12px;*/
-	margin: 15px 0 10px;
-	/*text-transform: uppercase;*/
-	/*font-weight: 500;*/
-	/*letter-spacing: 2px;*/
-}
-
-.team-item p {
+.bio-text-side p {
     font-size: 16px;
     font-weight: 400;
     color: rgba(255,255,255,0.8);
-    padding: 5px 10px 20px 10px;
+    /*padding: 5px 10px 20px 10px;*/
+    text-align: center;
+    
 }
+
 
 
 
