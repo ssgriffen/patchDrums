@@ -531,7 +531,7 @@ img::-moz-selection {
 }
 @media (max-width: 767px) {
   .header-content {
-    background: url('../img/crowd1.jpeg') center center / cover no-repeat;
+    background: url('../img/patchSet.jpg') center center / cover no-repeat;
   }
 
   #video-background {
