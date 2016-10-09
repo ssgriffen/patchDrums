@@ -549,14 +549,14 @@ img::-moz-selection {
 
 .team-item {
 	text-align: center;
-	background-color: #efefef;
+	background-color: #282828;
 }
 
 .team-item h3 {
 	font-size: 16px;
 	font-weight: 800;
 	text-transform: uppercase;
-	color: #2D2D2D;
+	color: rgba(255,255,255,.8);
 }
 
 .team-item .team-position {
@@ -571,7 +571,7 @@ img::-moz-selection {
 .team-item p {
     font-size: 16px;
     font-weight: 400;
-    color: #292929;
+    color: rgba(255,255,255,0.8);
     padding: 5px 10px 20px 10px;
 }
 
