@@ -529,14 +529,15 @@ img::-moz-selection {
 #equip .equip-specific:hover, #equip1 .equip-specific:hover{
     color: white;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+    #video-background {
+    display: none;
+  }
   .header-content {
     background: url('../img/patchSet.jpg') center center / cover no-repeat;
   }
 
-  #video-background {
-    display: none;
-  }
+  
   #play1{
     display: none;
   }
